@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo_contacto.css">
+    <script defer src="script_contacto.js"></script>
+    <title>Contacto - Universidad IDCP</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Universidad IDCP</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section: Nosotros -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nosotros</h1>
+            <p>
+                Nuestra misión es brindarte la más alta calidad en educación, ofreciéndote una experiencia única para que te sientas cómodo y seguro en cualquier ocasión. 
+                En la Universidad IDCP, creemos en la forma de expresión y estamos aquí para ayudarte a contar tu historia.
+            </p>
+        </div>
+    </section>
+
+    <!-- Hero Section: Dónde Encontrarnos -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Dónde Encontrarnos</h1>
+            <p>
+                Visítanos en nuestra sede principal ubicada en <strong>Cra. 7 #3534, El Centro, Cartagena de Indias</strong>. Nuestro horario de atención es:<br>
+                <ul>
+                    <li><strong>Lunes a sábado:</strong> 10:00 a.m. - 8:00 p.m.</li>
+                    <li><strong>Domingos:</strong> 11:00 a.m. - 6:00 p.m.</li>
+                </ul>
+            </p>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mapa</h1>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.944077026981!2d-75.55200482520026!3d10.426012589702236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62f9fa5d0d723%3A0xe015e9c368d2e22e!2sUNINU%C3%91EZ%20%7C%20Sede%20Miguel%20Henr%C3%ADquez%20Caste%C3%B1eda!5e0!3m2!1ses!2sco!4v1732717114278!5m2!1ses!2sco" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contact">
+        <div class="contact-content">
+            <h1>Contáctanos</h1>
+            <p>¿Tienes dudas o necesitas más información? Completa el formulario y nuestro equipo te responderá pronto.</p>
+            <form id="contactForm">
+                <label for="name">Nombre Completo</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="formResponse" style="display: none;">¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.</p>
+        </div>
+    </section>
+</body>
+</html>

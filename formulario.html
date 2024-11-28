@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción a Carrera</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <h1>Formulario de Inscripción a Carrera</h1>
+        <form id="registrationForm" novalidate>
+            <section class="form-section">
+                <h2>Selección de Carrera</h2>
+                <div class="form-group">
+                    <label for="career">¿En qué carrera desea inscribirse?</label>
+                    <select id="career" name="career" required>
+                        <option value="">Seleccione una carrera</option>
+                        <option value="ADMINISTRACIÓN DE EMPRESAS">ADMINISTRACIÓN DE EMPRESAS</option>
+                        <option value="BACTERIOLOGÍA">BACTERIOLOGÍA</option>
+                        <option value="CONTADURÍA PÚBLICA">CONTADURÍA PÚBLICA</option>
+                        <option value="DERECHO">DERECHO</option>
+                        <option value="ENFERMERÍA">ENFERMERÍA</option>
+                        <option value="INGENIERÍA DE SISTEMAS">INGENIERÍA DE SISTEMAS</option>
+                        <option value="INSTRUMENTACIÓN QUIRÚRGICA">INSTRUMENTACIÓN QUIRÚRGICA</option>
+                        <option value="LICENCIATURA EN EDUCACIÓN INFANTIL">LICENCIATURA EN EDUCACIÓN INFANTIL</option>
+                        <option value="MEDICINA">MEDICINA</option>
+                        <option value="ODONTOLOGÍA">ODONTOLOGÍA</option>
+                        <option value="TECNOLOGÍA EN ATENCIÓN PREHOSPITALARIA">TECNOLOGÍA EN ATENCIÓN PREHOSPITALARIA</option>
+                        <option value="TECNOLOGÍA EN ESTÉTICA Y COSMETOLOGÍA">TECNOLOGÍA EN ESTÉTICA Y COSMETOLOGÍA</option>
+                        <option value="TECNOLOGÍA EN MECÁNICA DENTAL">TECNOLOGÍA EN MECÁNICA DENTAL</option>
+                        <option value="TRABAJO SOCIAL">TRABAJO SOCIAL</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>Información Personal</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">Primer nombre</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="secondName">Segundo Nombre</label>
+                        <input type="text" id="secondName" name="secondName">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstLastName">Primer Apellido</label>
+                        <input type="text" id="firstLastName" name="firstLastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="secondLastName">Segundo Apellido</label>
+                        <input type="text" id="secondLastName" name="secondLastName">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="birthDate">Fecha de nacimiento</label>
+                        <input type="date" id="birthDate" name="birthDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="documentType">Tipo de documento</label>
+                        <select id="documentType" name="documentType" required>
+                            <option value="">Seleccione tipo de documento</option>
+                            <option value="CC">Cédula de Ciudadanía</option>
+                            <option value="CE">Cédula de Extranjería</option>
+                            <option value="TI">Tarjeta de Identidad</option>
+                            <option value="PA">Pasaporte</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="documentNumber">Número de Documento</label>
+                        <input type="text" id="documentNumber" name="documentNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Sexo biológico</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Seleccione sexo biológico</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="civilStatus">Estado civil</label>
+                        <select id="civilStatus" name="civilStatus" required>
+                            <option value="">Seleccione estado civil</option>
+                            <option value="SOLTERO">Soltero/a</option>
+                            <option value="CASADO">Casado/a</option>
+                            <option value="DIVORCIADO">Divorciado/a</option>
+                            <option value="VIUDO">Viudo/a</option>
+                            <option value="UNION_LIBRE">Unión Libre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Celular</label>
+                        <input type="tel" id="mobile" name="mobile" required>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>Dirección Residencial</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="country">País</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Ciudad</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>Encuesta Personal</h2>
+                <div class="form-group">
+                    <label>¿Tiene usted hijos?</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="children" value="0" required> No tengo
+                        </label>
+                        <label>
+                            <input type="radio" name="children" value="1"> 1 hijo
+                        </label>
+                        <label>
+                            <input type="radio" name="children" value="2"> 2 hijos
+                        </label>
+                        <label>
+                            <input type="radio" name="children" value="3"> 3 hijos
+                        </label>
+                        <label>
+                            <input type="radio" name="children" value="4"> 4 hijos
+                        </label>
+                        <label>
+                            <input type="radio" name="children" value="5+"> Más de 4 hijos
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Cuenta con alguna discapacidad?</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" id="noDisability" name="disability" value="ninguna"> Ninguna
+                        </label>
+                        <label>
+                            <input type="checkbox" name="disability" value="motriz"> Discapacidad motriz
+                        </label>
+                        <label>
+                            <input type="checkbox" name="disability" value="sorda"> Discapacidad sorda
+                        </label>
+                        <label>
+                            <input type="checkbox" name="disability" value="cognitiva"> Discapacidad cognitiva
+                        </label>
+                        <label>
+                            <input type="checkbox" name="disability" value="sordoceguera"> Sordoceguera
+                        </label>
+                        <label>
+                            <input type="checkbox" name="disability" value="voz"> Trastorno de la voz y el habla
+                        </label>
+                        <label>
+                            <input type="checkbox" id="other" name="disability" value="otra"> Otra
+                        </label>
+                    </div>
+                </div>
+
+                <div id="otherDisabilityGroup" class="form-group" style="display: none;">
+                    <label for="otherDisability">¿Diga cuál es su otra discapacidad?</label>
+                    <input type="text" id="otherDisability" name="otherDisability">
+                </div>
+
+                <div class="form-group">
+                    <label>¿Se reconoce como parte de alguna de las siguientes poblaciones?</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" id="none" name="population" value="ninguna"> Ninguna
+                        </label>
+                        <label>
+                            <input type="checkbox" name="population" value="indigenas"> Indígenas
+                        </label>
+                        <label>
+                            <input type="checkbox" name="population" value="afrocolombianos"> Afrocolombianos
+                        </label>
+                        <label>
+                            <input type="checkbox" name="population" value="raizales"> Raizales
+                        </label>
+                        <label>
+                            <input type="checkbox" name="population" value="rom"> Pueblo ROM o Gitano
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Usted trabaja actualmente?</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="employment" value="no" required> No estoy trabajando
+                        </label>
+                        <label>
+                            <input type="radio" name="employment" value="empleado"> Sí, empleado
+                        </label>
+                        <label>
+                            <input type="radio" name="employment" value="independiente"> Sí, independiente
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Enviar</button>
+                <button type="reset" class="btn-reset">Limpiar</button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
